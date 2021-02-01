@@ -1,0 +1,95 @@
+.gender {
+    display: flex;
+    flex-direction: column;
+    max-width: 675px;
+    border-radius: 13px;
+    background-color: rgba(253, 253, 255, 1);
+}
+.gender__header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 768px;
+    padding: 24px 42px 0 24px;
+}
+
+.gender__list-item {
+    display: inline-block;
+    list-style-type: none;
+    min-width: 60px;
+    padding: 0 20px;
+}
+
+.gender__list-item--pink{
+    background:  url(../img/lists/list-style-image-pink.img) no-repeat left center;
+}
+
+.gender__list-item--violet{
+    background: url(../img/lists/list-style-image-violet.png) no-repeat left center;
+}
+
+
+/* таблица */
+.gender__main{
+    overflow: auto;
+    margin-bottom: 24px;
+}
+.gender__schedule{
+    display: flex;
+    margin-top: 40px;
+    padding: 0 40px;
+}
+.gender__schedule-y{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.gender__schedule-body{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 570px;
+    width: 118px;
+}
+.gender__schedule-cell{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    float: left;
+    width: 71px;
+    height: 57px;
+    border: 1px solid #EFF3F9;
+}
+.gender__schedule-x{
+    display: flex;
+    justify-content: space-around;
+    width: 570px;
+    margin: 0 0 0 70px;
+}
+
+/* столбики диаграммы */
+
+.gender__schedule-cell-column{
+    width: 22px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.gender__schedule-cell-column--none{
+    height: 2px;
+}
+.gender__schedule-cell-column--midle{
+    height: 58px;
+}
+.gender__schedule-cell-column--high{
+    height: 100px;
+}
+.gender__schedule-cell-column--low{
+    height: 30px;
+}
+.gender__schedule-cell-column--poor{
+    height: 23px;
+}
+.gender__schedule-cell-column--violet{
+    background-color: rgba(127, 127, 213, 1);
+}
+.gender__schedule-cell-column--pink{
+    background-color: rgba(231, 134, 215, 1);
+}

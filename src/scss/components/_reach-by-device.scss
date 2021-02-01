@@ -1,0 +1,45 @@
+.reach-by-device {
+    display: flex;
+    width: 288px;
+    height: 242px;
+    border-radius: 13px;
+    background-color: rgba(253, 253, 255, 1);
+}
+.reach-by-device__header{
+    align-self: flex-start;
+    padding: 22px 0 0 24px;
+}
+.reach-by-device__main {
+    position: absolute;
+    display: flex;
+    padding: 90px 0 0 24px;
+}
+.reach-by-device__mobile {
+    position: relative;
+    width: 121px;
+    height: 121px;
+    padding-top: 60px;
+    padding-left: 16px;
+    background: url(../img/schedules/schedule-mobile.png) no-repeat center/contain;
+}
+.reach-by-device__desktop {
+    position: relative;
+    right: 48px;
+    top: 8px;
+    width: 61px;
+    height: 47px;
+    padding-top: 23px;
+    padding-left: 20px;
+    background: url(../img/schedules/schedule-desktop.png) no-repeat center/contain;
+}
+.reach-by-device__list{
+    position: relative;
+    right: 40px;
+    list-style-position: inside;
+}
+.reach-by-device__list-item--violet{
+    list-style-image: url(../img/lists/list-style-image-pink.png);
+}
+.reach-by-device__list-item--pink{
+    list-style-image: url(../img/lists/list-style-image-violet.png);
+}

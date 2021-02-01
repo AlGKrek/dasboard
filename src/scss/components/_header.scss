@@ -1,0 +1,59 @@
+.header{
+    display: flex;
+    align-items: center;
+}
+.header__header{
+    margin: 45px;
+}
+.header__body{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    padding: 50px 50px 50px 0;
+}
+.header__body-input{
+    display: flex;
+    align-items: center;
+}
+.header__bell{
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+    background: url(../img/header/bell.png) no-repeat center;
+}
+.header__bell::before{
+    content: '';
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    background: url(../img/header/notice-under-bell.png) no-repeat 14px 3px;
+}
+.header__body-login{
+    display: flex;
+    align-items: center;
+}
+.header__body-avatar{
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/header/avatar.png);
+}
+/* стили инпута */
+.header__input{
+    width: 153px;
+    height: 32px;
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+}
+.header__input::-webkit-input-placeholder {
+    padding-left: 40px;
+    background: url(../img/header/search.png) no-repeat 18px center;
+}
+.header__input:-moz-placeholder {
+    padding-left: 40px;
+    background: url(../img/header/search.png) no-repeat 18px center;
+}
+.header__input:-ms-input-placeholder {
+    padding-left: 40px;
+    background: url(../img/header/search.png) no-repeat 18px center;
+}

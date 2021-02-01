@@ -1,0 +1,39 @@
+.geo {
+    display: flex;
+    flex-direction: column;
+    width: 381px;
+    height: 242px;
+    border-radius: 13px;
+    background-color: rgba(253, 253, 255, 1);
+}
+.geo__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+.geo__main {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: repeat(6, 10px);
+    grid-auto-flow: column;
+    grid-column-gap: 52px;
+    grid-row-gap: 15px;
+    padding: 0 24px;
+}
+.geo__countries {
+    display: flex;
+    justify-content: space-between;
+}
+.geo__countries-meter {
+    border-radius: 6px;
+    width: 140px;
+    height: 10px;
+}
+.geo__countries-meter::-webkit-progress-bar {
+    background-color:rgba(239, 243, 249, 1);
+    border-radius: 9px;
+}
+.geo__countries-meter::-webkit-progress-value {
+    background-color: rgba(127, 127, 213, 1);
+    border-radius: 6px;
+}
