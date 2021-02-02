@@ -6,3 +6,10 @@
     width: 1182px;
     height: 100%;
 }
+// стилизация заголовков
+.title{
+    @include text-decoration(30px, 700, $color-black);
+}
+.subtitle{
+    @include text-decoration(20px, 700, $color-black);
+}

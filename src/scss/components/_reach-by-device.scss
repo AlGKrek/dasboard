@@ -14,7 +14,7 @@
     display: flex;
     padding: 90px 0 0 24px;
 }
-.reach-by-device__mobile {
+.reach-by-device__text--mobile {
     position: relative;
     width: 121px;
     height: 121px;
@@ -22,7 +22,7 @@
     padding-left: 16px;
     background: url(../img/schedules/schedule-mobile.png) no-repeat center/contain;
 }
-.reach-by-device__desktop {
+.reach-by-device__text--desktop {
     position: relative;
     right: 48px;
     top: 10px;
@@ -42,4 +42,10 @@
 }
 .reach-by-device__list-item--pink{
     list-style-image: url(../img/lists/list-style-image-violet.png);
+}
+.reach-by-device__text{
+    @include text-decoration(12px, 600, $color-white);
+}
+.reach-by-device__list-item{
+    @include text-decoration(12px, 600, $color-black);
 }

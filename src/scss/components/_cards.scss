@@ -5,7 +5,7 @@
     width: 341px;
     height: 148px;
     border-radius: 13px;
-    background-color: rgba(253, 253, 255, 1);
+    background-color: $color-white;
 }
 .card__header {
     display: flex;
@@ -18,4 +18,18 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+}
+// стилизация текста
+// 
+.card__text{
+    @include text-decoration (20px, 500, $color-black);
+}
+.card__value{
+    @include text-decoration (20px, 500, $color-grey);
+}
+.arrow-up{
+    color: $color-violet;
+}
+.arrow-down{
+    color: $color-pink;
 }

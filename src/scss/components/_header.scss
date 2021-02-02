@@ -61,3 +61,7 @@
     padding-left: 40px;
     background: url(../img/header/search.png) no-repeat 18px center;
 }
+// стилизация текста
+.header__body-name{
+    @include text-decoration(20px, 600, $color-black);
+}

@@ -356,7 +356,6 @@ template {
 
 body {
   position: absolute;
-  display: block;
   background: url(../img/background/union-figure.svg) no-repeat left top;
 }
 
@@ -406,6 +405,22 @@ body {
           align-items: flex-end;
   width: 1182px;
   height: 100%;
+}
+
+.title {
+  font-family: 'Gilroy';
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  color: #4f4f4f;
+}
+
+.subtitle {
+  font-family: 'Gilroy';
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: #4f4f4f;
 }
 
 .navigation {
@@ -620,6 +635,14 @@ body {
   background: url(../img/header/search.png) no-repeat 18px center;
 }
 
+.header__body-name {
+  font-family: 'Gilroy';
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  color: #4f4f4f;
+}
+
 .main {
   width: 1182px;
   height: 100%;
@@ -678,6 +701,30 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 24px;
+}
+
+.card__text {
+  font-family: 'Gilroy';
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  color: #4f4f4f;
+}
+
+.card__value {
+  font-family: 'Gilroy';
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  color: #979797;
+}
+
+.arrow-up {
+  color: #7f7fd5;
+}
+
+.arrow-down {
+  color: #e786d7;
 }
 
 .audience-reach {
@@ -792,7 +839,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  border: 1.5px solid #7F7FD5;
+  border: 1.5px solid #7f7fd5;
   border-radius: 5px;
   margin-right: 0.5em;
   background-repeat: no-repeat;
@@ -810,7 +857,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  border: 1.5px solid #E786D7;
+  border: 1.5px solid #e786d7;
   border-radius: 5px;
   margin-right: 0.5em;
   background-repeat: no-repeat;
@@ -820,6 +867,30 @@ body {
 
 .audience-reach__input:checked + label::before {
   background-image: url(../img/input/check-mark.png);
+}
+
+.audience-reach__data-text {
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  color: #979797;
+}
+
+.audience-reach__input-text {
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  color: #4f4f4f;
+}
+
+.audience-reach__text {
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  color: #979797;
 }
 
 .reach-by-device {
@@ -846,7 +917,7 @@ body {
   padding: 90px 0 0 24px;
 }
 
-.reach-by-device__mobile {
+.reach-by-device__text--mobile {
   position: relative;
   width: 121px;
   height: 121px;
@@ -855,7 +926,7 @@ body {
   background: url(../img/schedules/schedule-mobile.png) no-repeat center/contain;
 }
 
-.reach-by-device__desktop {
+.reach-by-device__text--desktop {
   position: relative;
   right: 48px;
   top: 10px;
@@ -878,6 +949,22 @@ body {
 
 .reach-by-device__list-item--pink {
   list-style-image: url(../img/lists/list-style-image-violet.png);
+}
+
+.reach-by-device__text {
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  color: #fdfdff;
+}
+
+.reach-by-device__list-item {
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  color: #4f4f4f;
 }
 
 .gender {
@@ -1018,6 +1105,22 @@ body {
   background-color: #e786d7;
 }
 
+.gender__list-item {
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  color: #4f4f4f;
+}
+
+.gender__text {
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  color: #979797;
+}
+
 .geo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1078,5 +1181,37 @@ body {
 .geo__countries-meter::-webkit-progress-value {
   background-color: #7f7fd5;
   border-radius: 6px;
+}
+
+.geo__link {
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  color: #979797;
+}
+
+.geo__link:hover {
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  color: #4f4f4f;
+}
+
+.geo__countries-text {
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  color: #4f4f4f;
+}
+
+.geo__countries-value {
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  color: #979797;
 }
 /*# sourceMappingURL=main.css.map */

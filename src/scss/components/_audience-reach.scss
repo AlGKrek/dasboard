@@ -5,7 +5,7 @@
     width: 768px;
     height: 242px;
     border-radius: 13px;
-    background-color: rgba(253, 253, 255, 1);
+    background-color: $color-white;
 }
 .audience-reach__header {
     display: flex;
@@ -68,7 +68,7 @@
     height: 1em;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 1.5px solid #7F7FD5;
+    border: 1.5px solid $color-violet;
     border-radius: 5px;
     margin-right: 0.5em;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@
     height: 1em;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 1.5px solid #E786D7;
+    border: 1.5px solid $color-pink;
     border-radius: 5px;
     margin-right: 0.5em;
     background-repeat: no-repeat;
@@ -92,3 +92,14 @@
   .audience-reach__input:checked+label::before {
     background-image: url(../img/input/check-mark.png);
   }
+//   стилизация текста// 
+.audience-reach__data-text{
+    @include text-decoration (12px, 500, $color-grey);
+}
+.audience-reach__input-text{
+    @include text-decoration (12px, 600, $color-black);
+
+}
+.audience-reach__text{
+    @include text-decoration (12px, 500, $color-grey);
+}

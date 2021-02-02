@@ -1,11 +1,9 @@
 body{
     position: absolute;
-    display: block;
     background: url(../img/background/union-figure.svg) no-repeat left top;
 }
 .container{
     position: absolute;
-  
 }    
 .container::after{
     content:'';

@@ -4,7 +4,7 @@
     width: 381px;
     height: 242px;
     border-radius: 13px;
-    background-color: rgba(253, 253, 255, 1);
+    background-color: $color-white;
 }
 .geo__header {
     display: flex;
@@ -34,6 +34,18 @@
     border-radius: 9px;
 }
 .geo__countries-meter::-webkit-progress-value {
-    background-color: rgba(127, 127, 213, 1);
+    background-color: $color-violet;
     border-radius: 6px;
+}
+.geo__link{
+    @include text-decoration(12px, 500, $color-grey);
+}
+.geo__link:hover{
+    @include text-decoration(12px, 600, $color-black);
+}
+.geo__countries-text{
+    @include text-decoration(12px, 500, $color-black);
+}
+.geo__countries-value{
+    @include text-decoration(12px, 500, $color-grey);
 }

@@ -4,7 +4,7 @@
     max-width: 675px;
     height: 242px;
     border-radius: 13px;
-    background-color: rgba(253, 253, 255, 1);
+    background-color: $color-white;
 }
 .gender__header {
     display: flex;
@@ -89,8 +89,14 @@
     height: 23px;
 }
 .gender__schedule-cell-column--violet{
-    background-color: rgba(127, 127, 213, 1);
+    background-color: $color-violet;
 }
 .gender__schedule-cell-column--pink{
-    background-color: rgba(231, 134, 215, 1);
+    background-color: $color-pink;
+}
+.gender__list-item{
+    @include text-decoration(12px, 600, $color-black)
+}
+.gender__text{
+    @include text-decoration(12px, 500, $color-grey)
 }

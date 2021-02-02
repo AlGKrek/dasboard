@@ -1,0 +1,29 @@
+@mixin text-decoration($size, $weight, $color){
+    font: {
+        family: 'Gilroy';
+        size: $size;
+        weight: $weight;
+        style: normal;
+    }
+    color: $color;
+}
+@mixin xl{
+    @media (max-width: #{$screen-xl}) {
+        @content;
+    }
+}
+@mixin lg{
+    @media (max-width: #{$screen-lg}) {
+        @content;
+    }
+}
+@mixin md{
+    @media (max-width: #{$screen-md}) {
+        @content;
+    }
+}
+@mixin sm{
+    @media (max-width: #{$screen-sm}) {
+        @content;
+    }
+}
