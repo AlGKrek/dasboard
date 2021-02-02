@@ -358,7 +358,7 @@ template {
   position: -webkit-sticky;
   position: sticky;
   z-index: 1;
-  left: 0;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -837,7 +837,7 @@ template {
 }
 
 .gender__list-item--pink {
-  background: url(../img/lists/list-style-image-pink.img) no-repeat left center;
+  background: url(../img/lists/list-style-image-pink.png) no-repeat left center;
 }
 
 .gender__list-item--violet {
