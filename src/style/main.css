@@ -410,6 +410,7 @@ template {
 @media (max-width: 768px) {
   .wrapper {
     width: 468px;
+    padding-bottom: 50px;
   }
 }
 
@@ -630,6 +631,7 @@ template {
 @media (max-width: 768px) {
   .header {
     width: 468px;
+    padding: 0 5%;
   }
 }
 
@@ -1427,10 +1429,11 @@ template {
   background: #979797;
   position: fixed;
   top: 90%;
+  height: 10%;
   display: none;
   width: 468px;
-  height: 7%;
   z-index: 1;
+  opacity: 0.5;
 }
 
 @media (max-width: 768px) {
