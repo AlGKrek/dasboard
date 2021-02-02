@@ -2,25 +2,27 @@
     display: flex;
     flex-direction: column;
     max-width: 768px;
+    width: 768px;
+    height: 40vh;
     border-radius: 13px;
     background-color: rgba(253, 253, 255, 1);
 }
 .audience-reach__header {
     display: flex;
     justify-content: space-between;
-    max-width: 768px;
+    width: 768px;
     padding: 27px 63px 0 24px;
 }
 /* таблица */
 
 .audience-reach__main{
     overflow: auto;
-    margin-bottom: 24px;
+    padding-bottom: 24px;
 }
 .audience-reach__schedule {
     display: flex;
     padding: 0 40px;
-    margin-top: 30px;
+    padding-top: 3%;
 }
 .audience-reach__schedule-body {
     display: flex;

@@ -1,6 +1,10 @@
 @import 'global/normalize';
+@import 'components/wrapper';
+@import 'components/app';
+
 @import 'components/navigation';
 @import 'components/header';
+@import 'components/main';
 @import 'components/cards';
 @import 'components/audience-reach';
 @import 'components/reach-by-device';

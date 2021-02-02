@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     max-width: 675px;
+    height: 40vh;
     border-radius: 13px;
     background-color: rgba(253, 253, 255, 1);
 }
@@ -35,7 +36,7 @@
 }
 .gender__schedule{
     display: flex;
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 0 40px;
 }
 .gender__schedule-y{

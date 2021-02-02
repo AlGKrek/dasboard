@@ -1,15 +1,21 @@
 .header{
+    // position: fixed;
+    // z-index: 2;
+    // top: 0;
+    width: 90%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(239, 243, 249, 1);
 }
 .header__header{
-    margin: 45px;
+    padding-top: 45px;
 }
 .header__body{
     display: flex;
     justify-content: space-between;
-    width: 700px;
-    padding: 50px 50px 50px 0;
+    width: 100%;
+    padding: 45px 40px 0 45px;
 }
 .header__body-input{
     display: flex;
