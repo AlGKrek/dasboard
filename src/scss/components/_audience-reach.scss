@@ -1,17 +1,25 @@
 .audience-reach {
     display: flex;
     flex-direction: column;
-    max-width: 768px;
     width: 768px;
     height: 242px;
     border-radius: 13px;
     background-color: $color-white;
+    @include xl(){
+        width: 400px;
+    }
 }
 .audience-reach__header {
     display: flex;
     justify-content: space-between;
     width: 768px;
     padding: 27px 63px 0 24px;
+    @include xl(){
+        width: 380px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+    }
 }
 /* таблица */
 
@@ -95,6 +103,9 @@
 //   стилизация текста// 
 .audience-reach__data-text{
     @include text-decoration (12px, 500, $color-grey);
+    @include xl(){
+        margin-right: 20px;
+    }
 }
 .audience-reach__input-text{
     @include text-decoration (12px, 600, $color-black);

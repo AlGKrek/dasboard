@@ -4,20 +4,48 @@
     align-items: center;
     justify-content: space-around;
     background-color: rgba(239, 243, 249, 1);
+    @include xl(){
+        width: 500px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    @include lg(){
+        width: 468px;
+    }
 }
 .header__header{
     padding-top: 45px;
     padding-left: 48px;
+    @include xl(){
+        align-self: center;
+        padding-top: 45px;
+        padding-left: 10px;
+    }
+    @include lg(){
+        width: 468px;
+    }
 }
 .header__body{
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 45px 40px 0 45px;
+    @include xl(){
+        width: 400px;
+        padding: 10px 0 0 5px;
+        
+    }
+    @include lg(){
+        width: 468px;
+        justify-content: flex-start;
+    }
 }
 .header__body-input{
     display: flex;
     align-items: center;
+    
 }
 .header__bell{
     margin: 10px;
@@ -41,6 +69,9 @@
     width: 50px;
     height: 50px;
     background: url(../img/header/avatar.png);
+    @include lg(){
+        margin: 0 5px;        
+    }
 }
 /* стили инпута */
 .header__input{
@@ -48,6 +79,10 @@
     height: 32px;
     border: 1px solid #EBEBEB;
     border-radius: 8px;
+    @include lg(){
+        width: 250px;
+    }
+    
 }
 .header__input::-webkit-input-placeholder {
     padding-left: 40px;

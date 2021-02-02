@@ -5,6 +5,9 @@
     height: 242px;
     border-radius: 13px;
     background-color: $color-white;
+    @include xl(){
+        width: 400px;
+    }
 }
 .geo__header {
     display: flex;

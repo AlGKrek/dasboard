@@ -6,6 +6,9 @@
     height: 148px;
     border-radius: 13px;
     background-color: $color-white;
+    @include xl(){
+        width: 400px;
+    }
 }
 .card__header {
     display: flex;

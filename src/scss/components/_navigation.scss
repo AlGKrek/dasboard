@@ -6,6 +6,16 @@
     justify-content: space-around;
     align-items: center;    
     background: $color-white;
+    @include xl(){
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        width: 65px;
+        height: 100vh;
+    }
+    @include lg(){
+        display:none;
+    }
 }
 .logo{
     width: 46px;

@@ -5,12 +5,18 @@
     height: 242px;
     border-radius: 13px;
     background-color: $color-white;
+    @include xl(){
+        width: 400px;
+    }
 }
 .gender__header {
     display: flex;
     justify-content: space-between;
-    max-width: 768px;
+    width: 675px;
     padding: 24px 42px 0 24px;
+    @include xl(){
+        width: 400px;
+    }
 }
 
 .gender__list-item {

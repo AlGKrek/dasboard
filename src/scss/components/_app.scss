@@ -5,6 +5,12 @@
     align-items: flex-end;
     width: 1182px;
     height: 100%;
+    @include xl(){
+        width: 500px;
+    }
+    @include lg(){
+        width: 100%;
+    }
 }
 // стилизация заголовков
 .title{

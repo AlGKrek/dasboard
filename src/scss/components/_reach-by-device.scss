@@ -4,6 +4,10 @@
     height: 242px;
     border-radius: 13px;
     background-color: rgba(253, 253, 255, 1);
+    @include xl(){
+        width: 400px;
+        justify-content: center;
+    }
 }
 .reach-by-device__header{
     align-self: flex-start;
