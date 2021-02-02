@@ -6,7 +6,7 @@
           box-sizing: border-box;
 }
 
-.wrapper {
+.app {
   background-color: #eff3f9;
 }
 
@@ -354,6 +354,42 @@ template {
   display: none;
 }
 
+body {
+  position: absolute;
+  display: block;
+  background: url(../img/background/union-figure.svg) no-repeat left top;
+}
+
+.container {
+  position: absolute;
+}
+
+.container::after {
+  content: '';
+  position: relative;
+  z-index: -1;
+  display: block;
+  bottom: 40vh;
+  left: 140vh;
+  width: 413px;
+  height: 413px;
+  border-radius: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7F7FD5), to(#E786D7));
+  background: linear-gradient(180deg, #7F7FD5 0%, #E786D7 100%);
+  -webkit-box-shadow: 0px 48px 32px rgba(135, 128, 213, 0.14), 0px 32px 24px rgba(135, 128, 213, 0.1), 0px 4px 6px rgba(135, 128, 213, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 48px 32px rgba(135, 128, 213, 0.14), 0px 32px 24px rgba(135, 128, 213, 0.1), 0px 4px 6px rgba(135, 128, 213, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wrapper {
+  width: 1280px;
+  height: 880px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 14px;
+  margin: 100px;
+}
+
 .app {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,14 +404,13 @@ template {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  width: 1182px;
+  height: 100%;
 }
 
 .navigation {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  height: 100vh;
-  width: 90px;
+  height: 100%;
+  width: 98px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,6 +447,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 98px;
   height: 40vh;
 }
 
@@ -456,7 +492,6 @@ template {
 }
 
 .menu:hover {
-  position: relative;
   border-left: 6px solid #7f7fd5;
 }
 
@@ -494,31 +529,31 @@ template {
 }
 
 .header {
-  width: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #eff3f9;
 }
 
 .header__header {
   padding-top: 45px;
+  padding-left: 48px;
 }
 
 .header__body {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
   padding: 45px 40px 0 45px;
 }
 
@@ -586,8 +621,10 @@ template {
 }
 
 .main {
-  width: 90%;
+  width: 1182px;
+  height: 100%;
   padding-top: 44px;
+  padding-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,7 +635,7 @@ template {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  gap: 10px;
+  gap: 16px;
 }
 
 .card {
@@ -611,9 +648,8 @@ template {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  min-width: 340px;
-  width: 32%;
-  height: 30vh;
+  width: 341px;
+  height: 148px;
   border-radius: 13px;
   background-color: #fdfdff;
 }
@@ -654,7 +690,7 @@ template {
           flex-direction: column;
   max-width: 768px;
   width: 768px;
-  height: 40vh;
+  height: 242px;
   border-radius: 13px;
   background-color: #fdfdff;
 }
@@ -790,8 +826,8 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 300px;
-  height: 40vh;
+  width: 288px;
+  height: 242px;
   border-radius: 13px;
   background-color: #fdfdff;
 }
@@ -853,7 +889,7 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 675px;
-  height: 40vh;
+  height: 242px;
   border-radius: 13px;
   background-color: #fdfdff;
 }
@@ -991,7 +1027,7 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 381px;
-  height: 40vh;
+  height: 242px;
   border-radius: 13px;
   background-color: #fdfdff;
 }

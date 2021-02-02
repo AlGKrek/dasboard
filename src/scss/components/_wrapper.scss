@@ -1,0 +1,29 @@
+body{
+    position: absolute;
+    display: block;
+    background: url(../img/background/union-figure.svg) no-repeat left top;
+}
+.container{
+    position: absolute;
+  
+}    
+.container::after{
+    content:'';
+    position: relative;
+    z-index: -1;
+    display: block;
+    bottom: 40vh;
+    left: 140vh;
+    width: 413px;
+    height: 413px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #7F7FD5 0%, #E786D7 100%);
+    box-shadow: 0px 48px 32px rgba(135, 128, 213, 0.14), 0px 32px 24px rgba(135, 128, 213, 0.1), 0px 4px 6px rgba(135, 128, 213, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+.wrapper{
+    width: 1280px;
+    height: 880px;
+    display: flex;
+    border-radius: 14px;
+    margin: 100px;   
+}

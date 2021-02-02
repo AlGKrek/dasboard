@@ -1,20 +1,18 @@
 .header{
-    // position: fixed;
-    // z-index: 2;
-    // top: 0;
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
     background-color: rgba(239, 243, 249, 1);
 }
 .header__header{
     padding-top: 45px;
+    padding-left: 48px;
 }
 .header__body{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     padding: 45px 40px 0 45px;
 }
 .header__body-input{
